@@ -11,6 +11,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav">
+        <%= link_to 'One', pages_one_url %><br/>
+        <%= link_to 'Two', pages_two_url %><br/>
+        <%= link_to 'Three', pages_three_url %><br/>
+        <%= yield %>
+      </ul>
+    </nav>
   </body>
 </html>
